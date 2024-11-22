@@ -9,12 +9,12 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		8B3393AA2CEFF944004D1598 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -22,9 +22,27 @@
 		8B3393AC2CEFF944004D1598 /* AdventOfCode2023 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode2023; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		8B3393D22CF00A9A004D1598 /* Exceptions for "AdventOfCode2023" folder in "Copy Files" phase from "AdventOfCode2023" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 8B3393AA2CEFF944004D1598 /* CopyFiles */;
+			membershipExceptions = (
+				data/day_1/day_1_example_1.txt,
+				data/day_1/day_1_example_2.txt,
+				data/day_1/day_1.txt,
+				data/day_2/day_2_example_1.txt,
+				data/day_2/day_2_example_2.txt,
+				data/day_2/day_2.txt,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8B3393AE2CEFF944004D1598 /* AdventOfCode2023 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8B3393D22CF00A9A004D1598 /* Exceptions for "AdventOfCode2023" folder in "Copy Files" phase from "AdventOfCode2023" target */,
+			);
 			path = AdventOfCode2023;
 			sourceTree = "<group>";
 		};
@@ -186,6 +204,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -242,6 +261,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
