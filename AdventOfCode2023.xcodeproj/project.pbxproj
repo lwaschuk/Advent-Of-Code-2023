@@ -36,6 +36,9 @@
 				data/day_3/d3_e1.txt,
 				data/day_3/d3_e2.txt,
 				data/day_3/d3.txt,
+				data/day_4/d4_e1.txt,
+				data/day_4/d4_e2.txt,
+				data/day_4/d4.txt,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */

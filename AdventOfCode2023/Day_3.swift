@@ -59,7 +59,6 @@ class Day_3 {
             
             let first = helper.collectNumber(x: x + output.locations[0].0, y: y + output.locations[0].1, engine: &engine)
             let second = helper.collectNumber(x: x + output.locations[1].0, y: y + output.locations[1].1, engine: &engine)
-            print("Found gear: \(first) * \(second)")
             let ratio = first * second
             gear_ratios += ratio
           }
