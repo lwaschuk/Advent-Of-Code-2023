@@ -42,6 +42,9 @@
 				data/day_5/d5_e1.txt,
 				data/day_5/d5_e2.txt,
 				data/day_5/d5.txt,
+				data/day_6/d6_e1.txt,
+				data/day_6/d6_e2.txt,
+				data/day_6/d6.txt,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
