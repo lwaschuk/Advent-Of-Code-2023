@@ -47,7 +47,6 @@ class Day_6 {
     for velocity in 0...race.time {
       let remainingTime = race.time - velocity
       let distanceTraveled = velocity * remainingTime
-      let percentageComplete = Double(distanceTraveled) / Double(race.distance)
       if distanceTraveled > race.distance {
         beatRecord += 1
       }

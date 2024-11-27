@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8B42DC672CF7CD7D0019B853 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 8B42DC662CF7CD7D0019B853 /* Algorithms */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		8B3393AA2CEFF944004D1598 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -45,6 +49,63 @@
 				data/day_6/d6_e1.txt,
 				data/day_6/d6_e2.txt,
 				data/day_6/d6.txt,
+				data/day_7/d7_e1.txt,
+				data/day_7/d7_e2.txt,
+				data/day_7/d7.txt,
+				data/day_8/d8_e1.txt,
+				data/day_8/d8_e2.txt,
+				data/day_8/d8.txt,
+				data/day_9/d9_e1.txt,
+				data/day_9/d9_e2.txt,
+				data/day_9/d9.txt,
+				data/day_10/d10_e1.txt,
+				data/day_10/d10_e2.txt,
+				data/day_10/d10.txt,
+				data/day_11/d11_e1.txt,
+				data/day_11/d11_e2.txt,
+				data/day_11/d11.txt,
+				data/day_12/d12_e1.txt,
+				data/day_12/d12_e2.txt,
+				data/day_12/d12.txt,
+				data/day_13/d13_e1.txt,
+				data/day_13/d13_e2.txt,
+				data/day_13/d13.txt,
+				data/day_14/d14_e1.txt,
+				data/day_14/d14_e2.txt,
+				data/day_14/d14.txt,
+				data/day_15/d15_e1.txt,
+				data/day_15/d15_e2.txt,
+				data/day_15/d15.txt,
+				data/day_16/d16_e1.txt,
+				data/day_16/d16_e2.txt,
+				data/day_16/d16.txt,
+				data/day_17/d17_e1.txt,
+				data/day_17/d17_e2.txt,
+				data/day_17/d17.txt,
+				data/day_18/d18_e1.txt,
+				data/day_18/d18_e2.txt,
+				data/day_18/d18.txt,
+				data/day_19/d19_e1.txt,
+				data/day_19/d19_e2.txt,
+				data/day_19/d19.txt,
+				data/day_20/d20_e1.txt,
+				data/day_20/d20_e2.txt,
+				data/day_20/d20.txt,
+				data/day_21/d21_e1.txt,
+				data/day_21/d21_e2.txt,
+				data/day_21/d21.txt,
+				data/day_22/d22_e1.txt,
+				data/day_22/d22_e2.txt,
+				data/day_22/d22.txt,
+				data/day_23/d23_e1.txt,
+				data/day_23/d23_e2.txt,
+				data/day_23/d23.txt,
+				data/day_24/d24_e1.txt,
+				data/day_24/d24_e2.txt,
+				data/day_24/d24.txt,
+				data/day_25/d25_e1.txt,
+				data/day_25/d25_e2.txt,
+				data/day_25/d25.txt,
 			);
 		};
 /* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
@@ -65,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B42DC672CF7CD7D0019B853 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +169,7 @@
 			);
 			name = AdventOfCode2023;
 			packageProductDependencies = (
+				8B42DC662CF7CD7D0019B853 /* Algorithms */,
 			);
 			productName = AdventOfCode2023;
 			productReference = 8B3393AC2CEFF944004D1598 /* AdventOfCode2023 */;
@@ -136,6 +199,9 @@
 			);
 			mainGroup = 8B3393A32CEFF944004D1598;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8B42DC652CF7CD7D0019B853 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8B3393AD2CEFF944004D1598 /* Products */;
 			projectDirPath = "";
@@ -321,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B42DC652CF7CD7D0019B853 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B42DC662CF7CD7D0019B853 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B42DC652CF7CD7D0019B853 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B3393A42CEFF944004D1598 /* Project object */;
 }
