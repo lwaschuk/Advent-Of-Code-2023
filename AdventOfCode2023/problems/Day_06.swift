@@ -7,26 +7,26 @@
 
 import Foundation
 
-class Day_6 {
-//    let input: [String] = File_Utils().readFile(named: "d6_e1", withExtension: "txt")
+class Day_06 {
+  //    let input: [String] = File_Utils().readFile(named: "d6_e1", withExtension: "txt")
   //  let input: [String] = File_Utils().readFile(named: "d6_e2", withExtension: "txt")
   let input: [String] = File_Utils().readFile(named: "d6", withExtension: "txt")
   let helper = Helper()
-  
+
   func run() {
     part1()
     part2()
   }
-  
+
   func part1() {
     let races = helper.deseriallize(input)
     var timesBeatRecord: [Int] = []
-    
+
     for race in races {
       let time = race.time
       let recordDistance = race.distance
       var beatRecord: Int = 0
-      
+
       for velocity in 0...time {
         let remainingTime = time - velocity
         let distanceTraveled = velocity * remainingTime
@@ -36,10 +36,10 @@ class Day_6 {
       }
       timesBeatRecord.append(beatRecord)
     }
-    
+
     print("Part 1: \(timesBeatRecord.reduce(1, *))")
   }
-  
+
   func part2() {
     let race = helper.deseriallizePart2(input)
     var beatRecord: Int = 0
@@ -53,12 +53,12 @@ class Day_6 {
     }
     print("Part 2: \(beatRecord)")
   }
-  
+
   internal class Helper {
     func deseriallize(_ input: [String]) -> [Race] {
       var timeArr: [Int] = []
       var distanceArr: [Int] = []
-      
+
       for line in input {
         if line.contains("Time:") {
           let split = line.replacingOccurrences(of: "Time:", with: "").split(separator: " ")
@@ -73,15 +73,15 @@ class Day_6 {
           }
         }
       }
-      
+
       let races: [Race] = zip(timeArr, distanceArr).map(Race.init)
       return races
     }
-    
+
     func deseriallizePart2(_ input: [String]) -> Race {
       var distance: String = ""
       var time: String = ""
-      
+
       for line in input {
         if line.contains("Time:") {
           let split = line.replacingOccurrences(of: "Time:", with: "").split(separator: " ")
@@ -91,20 +91,18 @@ class Day_6 {
           split.forEach { distance += $0 }
         }
       }
-      
+
       return Race(time: Int(time)!, distance: Int(distance)!)
     }
   }
-  
+
   internal class Race {
     let time: Int
     let distance: Int
-    
+
     init(time: Int, distance: Int) {
       self.time = time
       self.distance = distance
     }
   }
 }
-
-
